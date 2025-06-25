@@ -20,6 +20,7 @@ fn main() -> eframe::Result {
     )
 }
 
+// Compiling for web
 #[cfg(target_arch = "wasm32")]
 fn main() {
     use eframe::wasm_bindgen::JsCast;
