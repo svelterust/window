@@ -11,6 +11,9 @@
     in
     {
       devShells.${system}.default = pkgs.mkShell {
+        buildInputs = [
+          pkgs.trunk
+        ];
         LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
           pkgs.wayland
           pkgs.libGL
